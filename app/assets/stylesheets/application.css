@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ #messageErrorOnSignIn
+ {
+     position: absolute;
+     top: 49%;
+     left: 67.5%;
+     color: rgb(255, 255, 255);
+     z-index: 3;
+ }
