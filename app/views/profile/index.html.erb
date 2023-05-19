@@ -6,7 +6,13 @@
         <h1>Panel użytkownika</h1>
         <p>Imię: <%= @user.name %></p>
         <p>Nazwisko: <%= @user.surname %></p>
+        <p>Nick: <%= @user.nick %></p>
+        <p>Wiek: <%= @user.age %></p>
+        <p>E-mail: <%= @user.email %></p>
     </div>
+
+    <%= button_to 'WYLOGUJ SIĘ', destroy_user_session_path, method: :delete %>
+
 
 </body>
 

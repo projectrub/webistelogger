@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   authenticated :user do
     resources :profile
   end
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :users, controllers: 
+  { 
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
 end

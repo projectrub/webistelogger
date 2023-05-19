@@ -1,4 +1,5 @@
 <head>
+  <%= stylesheet_link_tag "sign_in_sign_up" %>
   <%= stylesheet_link_tag "sign_in" %>
   <style>
     @font-face 
@@ -24,8 +25,8 @@
         <%= video_tag("14.mp4", autoplay: true, loop: true, muted: true, playsinline: true, playspeed: 3, class: "sign_in-video") %>
     </div>
 
-  <div class="container">
-  <div class="sign_in">
+  <div class="container_sessions">
+  <div class="areas_sessions">
         <%= video_tag("2.mp4", autoplay: true, loop: true, muted: true, playsinline: true, playspeed: 1.5, class: "video_form") %>
     <h2>LOGOWANIE</h2>
 
@@ -46,7 +47,7 @@
       <% end %>
 
       <div class="createAccount">
-        <%= f.submit "ZALOGUJ SIĘ", class: "button_log_in" %>
+        <%= f.submit "ZALOGUJ SIĘ", class: "button_toClick" %>
       </div>
     <%= render "devise/shared/links" %>
     <% end %>

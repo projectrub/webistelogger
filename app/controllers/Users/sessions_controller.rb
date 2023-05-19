@@ -21,6 +21,10 @@ class Users::SessionsController < Devise::SessionsController
   # def destroy
   #   super
   # end
+  def destroy
+    sign_out(current_user)
+    redirect_to root_path
+  end
 
   # protected
 

@@ -10,4 +10,6 @@ class ProfileController < ApplicationController
         User.find_by(id: user_id)
     end
 
+
+
 end
