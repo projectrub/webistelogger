@@ -3,7 +3,7 @@
     z-index: 1;
 }
 
-.home
+.home_page
 {
     position: relative;
     left: 80%;
@@ -21,13 +21,13 @@
     left: 44%;
     display: inline-block;
 
-    color: white;
     z-index: 1;
 }
 
 .motto h1
 {
     text-align: center;
+    color: rgb(255, 255, 255);
     font-family: Sunday;
     font-weight: 400;
     font-size: calc(6vh + 4.6vw);
@@ -41,6 +41,7 @@
     top: 26%;
 
     font-family: CaviarDreams;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: calc(1vh + 1vw);
 }
@@ -58,7 +59,7 @@
 }
 
 
-.button
+.button_home
 {
     display: inline-block;
     color: #ffffff;

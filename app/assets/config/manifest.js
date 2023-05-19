@@ -7,4 +7,4 @@
 //= link fonts/CaviarDreams.ttf
 //= link fonts/Sunday.otf
 //= link home-background.mp4
-//= linj 2.png
+//= link 2.png

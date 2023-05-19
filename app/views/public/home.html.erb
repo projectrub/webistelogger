@@ -18,16 +18,16 @@
         }
     </style>
     <strong>
-       <%= link_to "LOGGER POMPEK", root_path, class: "home" %>
+       <%= link_to "LOGGER POMPEK", root_path, class: "home_page" %>
     </strong>
 </head>
 <body>
   <div class="click">
       <div class="button-sign_in">
-        <%= button_to "ZALOGUJ SIĘ", new_user_session_path, method: :get, class: "button" %>
+        <%= button_to "ZALOGUJ SIĘ", new_user_session_path, method: :get, class: "button_home" %>
       </div>
       <div class="button-sign_up">
-        <%= button_to "ZAREJESTRUJ SIĘ", new_user_registration_path, method: :get, class: "button" %>
+        <%= button_to "ZAREJESTRUJ SIĘ", new_user_registration_path, method: :get, class: "button_home" %>
       </div>
   </div>
 
