@@ -39,10 +39,8 @@
 
 
    <div class="background">
-    <img src="photos/2.png" alt="overlay"  class="overlay">
-    <video autoplay loop muted plays-inline class="home-background-video">
-        <source src="video/home-background.mp4" type="video/mp4">
-    </video>
+      <%= image_tag("2.png", :alt => "overlay", class: "overlay") %>
+      <%= video_tag("home-background.mp4", autoplay: true, loop: true, muted: true, playsinline: true, class: "home-background-video") %>
   </div>
 
 </body>
