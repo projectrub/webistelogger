@@ -1,5 +1,5 @@
 <head>
-    <%= stylesheet_link_tag "profile" %>
+    <%= stylesheet_link_tag "date" %>
     <style>
     @font-face 
     {
@@ -29,21 +29,8 @@
                 document.getElementById("nagivationVertical").style.display = "none";
             }
         }
-        function ShowProfile() 
-        {
-        if (document.getElementById("panelUser").style.display === "none") 
-            {
-                document.getElementById("panelUser").style.display = "block";
-            } 
-            else 
-            {
-                document.getElementById("panelUser").style.display = "none";
-            }
-        } 
     </script>
     <%= image_tag("profile.png", :alt => "profile", class: "profile") %>
-        <h1 class="cytat">PRZECIWNOŚCI LOSU POWODUJĄ, ŻE JEDNI SIĘ ZAŁAMUJĄ, A INNI ŁAMIĄ REKORDY</h1>
-        <h2 class="autor">William A. Ward</h2>
     <div class="nagivationHorizontal">
     </div>
 
@@ -61,6 +48,22 @@
             <li class="list_li"><button onclick="ShowProfile()" class="buttonNavVer">USTAWIENIA</button></li>
             <li class="list_li"><%= button_to 'WYLOGUJ SIĘ', destroy_user_session_path, method: :delete, class: "buttonNavVer" %></li>
         </ul>
+    </div>
+
+    <div class="panelUser">
+            <%= link_to "PROFIL UŻYTKOWNIKA", date_path(@user.id), class: "panel" %>
+            <p class="date">IMIĘ</p> 
+            <p class="date">NAZWISKO</p>
+            <p class="date">NICK</p>
+            <p class="date">WIEK</p>
+            <p class="date">E-MAIL</p>
+            <div class="showOutput">
+                <p class="output"><%= @user.name %></p>
+                <p class="output"><%= @user.surname %></p>
+                <p class="output"><%= @user.nick %></p>
+                <p class="output"><%= @user.age %></p>
+                <p class="output"><%= @user.email %></p>
+            </div
     </div>
 </body>
 

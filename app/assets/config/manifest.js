@@ -4,7 +4,11 @@
 //= link_tree ../../../vendor/javascript .js
 //= link 14.mp4
 //= link 2.mp4
+//= link training/fonts/CaviarDreams.ttf
 //= link fonts/CaviarDreams.ttf
 //= link fonts/Sunday.otf
+//= link training/fonts/Sunday.otf
 //= link home-background.mp4
 //= link 2.png
+//= link profile.png
+//= link icons8-menu-50.png

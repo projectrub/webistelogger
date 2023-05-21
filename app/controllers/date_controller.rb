@@ -1,7 +1,7 @@
-class ProfileController < ApplicationController
+class DateController < ApplicationController
     before_action :authenticate_user!
-
-    def index
+    
+    def show
         @user = get_current_logged_in_user
     end
 
@@ -11,5 +11,4 @@ class ProfileController < ApplicationController
         user_id = current_user.id
         User.find_by(id: user_id)
     end
-
 end

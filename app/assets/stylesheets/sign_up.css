@@ -79,5 +79,7 @@
 {
     text-decoration: none;
     color: white;
+    font-family: CaviarDreams;
+    font-weight: 600;
     text-shadow: 1px 1px 5px black;
 }
